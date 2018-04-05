@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Kredittkort
+
+  Created by Magdusz on 05.04.2018.
+  Copyright © 2018 com.mcpusz.kredittkort. All rights reserved.
+*/
+"appNameLabel" = "Kredittkort";
+"cardDataLabel" = "Card data:";
+"validateButton" = "Validate";
+"generateButton" = "Generate";

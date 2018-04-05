@@ -11,10 +11,15 @@
 		B01C9CFF649B800ECB6DDA42 /* libPods-Kredittkort.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E225ADC3405345E7E93EC940 /* libPods-Kredittkort.a */; };
 		B6B134692075F4A2004614E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B134682075F4A2004614E9 /* AppDelegate.swift */; };
 		B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1346A2075F4A3004614E9 /* ViewController.swift */; };
-		B6B1346E2075F4A3004614E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1346C2075F4A3004614E9 /* Main.storyboard */; };
 		B6B134702075F4A4004614E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1346F2075F4A4004614E9 /* Assets.xcassets */; };
 		B6B134732075F4A4004614E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B134712075F4A4004614E9 /* LaunchScreen.storyboard */; };
 		B6B1347E2075F4A4004614E9 /* KredittkortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1347D2075F4A4004614E9 /* KredittkortTests.swift */; };
+		B6B1348D20762BFE004614E9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1348C20762BFE004614E9 /* Colors.swift */; };
+		B6B1348F207684E9004614E9 /* ViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1348E207684E9004614E9 /* ViewController+Constraints.swift */; };
+		B6B1349120768598004614E9 /* ViewController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1349020768598004614E9 /* ViewController+Appearance.swift */; };
+		B6B13494207689A6004614E9 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13493207689A6004614E9 /* String+Localize.swift */; };
+		B6B13496207689C8004614E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6B13495207689C8004614E9 /* Localizable.strings */; };
+		B6B134982076998A004614E9 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B134972076998A004614E9 /* UITextField+Padding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +39,18 @@
 		B6B134652075F4A2004614E9 /* Kredittkort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kredittkort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B134682075F4A2004614E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B1346A2075F4A3004614E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6B1346D2075F4A3004614E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6B1346F2075F4A4004614E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6B134722075F4A4004614E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6B134742075F4A4004614E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B134792075F4A4004614E9 /* KredittkortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KredittkortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B1347D2075F4A4004614E9 /* KredittkortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KredittkortTests.swift; sourceTree = "<group>"; };
 		B6B1347F2075F4A4004614E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B1348C20762BFE004614E9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B6B1348E207684E9004614E9 /* ViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Constraints.swift"; sourceTree = "<group>"; };
+		B6B1349020768598004614E9 /* ViewController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Appearance.swift"; sourceTree = "<group>"; };
+		B6B13493207689A6004614E9 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
+		B6B13495207689C8004614E9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B6B134972076998A004614E9 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 		DA78F51172AA9D6452BC76BF /* Pods-KredittkortTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KredittkortTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KredittkortTests/Pods-KredittkortTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E225ADC3405345E7E93EC940 /* libPods-Kredittkort.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kredittkort.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37D7C12B59C0C20382F72F7 /* Pods_KredittkortTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KredittkortTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +86,7 @@
 				C5C0FFE75E2C6A55311E20CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		B6B134662075F4A2004614E9 /* Products */ = {
 			isa = PBXGroup;
@@ -89,12 +100,10 @@
 		B6B134672075F4A2004614E9 /* Kredittkort */ = {
 			isa = PBXGroup;
 			children = (
-				B6B134682075F4A2004614E9 /* AppDelegate.swift */,
-				B6B1346A2075F4A3004614E9 /* ViewController.swift */,
-				B6B1346C2075F4A3004614E9 /* Main.storyboard */,
-				B6B1346F2075F4A4004614E9 /* Assets.xcassets */,
-				B6B134712075F4A4004614E9 /* LaunchScreen.storyboard */,
-				B6B134742075F4A4004614E9 /* Info.plist */,
+				B6B13488207601BA004614E9 /* AppSettings */,
+				B6B13489207601C5004614E9 /* SupportingFiles */,
+				B6B1348A207601D3004614E9 /* Modules */,
+				B6B1349220768994004614E9 /* Extensions */,
 			);
 			path = Kredittkort;
 			sourceTree = "<group>";
@@ -106,6 +115,53 @@
 				B6B1347F2075F4A4004614E9 /* Info.plist */,
 			);
 			path = KredittkortTests;
+			sourceTree = "<group>";
+		};
+		B6B13488207601BA004614E9 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1348B20762BF0004614E9 /* Constants */,
+				B6B134682075F4A2004614E9 /* AppDelegate.swift */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		B6B13489207601C5004614E9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B6B134712075F4A4004614E9 /* LaunchScreen.storyboard */,
+				B6B1346F2075F4A4004614E9 /* Assets.xcassets */,
+				B6B134742075F4A4004614E9 /* Info.plist */,
+				B6B13495207689C8004614E9 /* Localizable.strings */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B6B1348A207601D3004614E9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1346A2075F4A3004614E9 /* ViewController.swift */,
+				B6B1348E207684E9004614E9 /* ViewController+Constraints.swift */,
+				B6B1349020768598004614E9 /* ViewController+Appearance.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B6B1348B20762BF0004614E9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1348C20762BFE004614E9 /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B6B1349220768994004614E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13493207689A6004614E9 /* String+Localize.swift */,
+				B6B134972076998A004614E9 /* UITextField+Padding.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C5C0FFE75E2C6A55311E20CE /* Frameworks */ = {
@@ -216,8 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B134732075F4A4004614E9 /* LaunchScreen.storyboard in Resources */,
+				B6B13496207689C8004614E9 /* Localizable.strings in Resources */,
 				B6B134702075F4A4004614E9 /* Assets.xcassets in Resources */,
-				B6B1346E2075F4A3004614E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +395,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B1349120768598004614E9 /* ViewController+Appearance.swift in Sources */,
 				B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */,
+				B6B1348D20762BFE004614E9 /* Colors.swift in Sources */,
+				B6B1348F207684E9004614E9 /* ViewController+Constraints.swift in Sources */,
+				B6B134982076998A004614E9 /* UITextField+Padding.swift in Sources */,
 				B6B134692075F4A2004614E9 /* AppDelegate.swift in Sources */,
+				B6B13494207689A6004614E9 /* String+Localize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,14 +424,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6B1346C2075F4A3004614E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6B1346D2075F4A3004614E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6B134712075F4A4004614E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -503,12 +556,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
-				INFOPLIST_FILE = Kredittkort/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/Kredittkort/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.Kredittkort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -519,12 +576,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
-				INFOPLIST_FILE = Kredittkort/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/Kredittkort/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.Kredittkort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -537,7 +598,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = KredittkortTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.KredittkortTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -555,7 +620,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = KredittkortTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.KredittkortTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
