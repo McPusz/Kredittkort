@@ -54,7 +54,7 @@ extension ViewController {
          self.expiryDateTextField.trailingAnchor.constraint(equalTo: self.cvvTextField.leadingAnchor, constant: -paddingSmall),
          self.cvvTextField.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -paddingSmall),
          self.expiryDateTextField.widthAnchor.constraint(equalTo: self.cvvTextField.widthAnchor),
-         self.cvvTextField.widthAnchor.constraint(equalToConstant: self.view.bounds.width/8),
+         self.cvvTextField.widthAnchor.constraint(equalToConstant: self.view.bounds.width/6),
          self.cardNumberTextField.heightAnchor.constraint(equalToConstant: 30),
          self.expiryDateTextField.heightAnchor.constraint(equalTo: self.cardNumberTextField.heightAnchor),
          self.cvvTextField.heightAnchor.constraint(equalTo: self.cardNumberTextField.heightAnchor)]

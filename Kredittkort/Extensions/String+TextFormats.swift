@@ -12,17 +12,29 @@ extension String {
     func applyCreditCardFormat() -> String {
         let combinedString = self.components(separatedBy: .whitespaces).joined()
         var newFormatString = ""
-        let maxLength = 19
         guard !combinedString.isEmpty else { return newFormatString }
         
         for (index, char) in combinedString.enumerated() {
             let nextChar = index+1
             newFormatString.append(char)
             //add space every fourth character
-            if (nextChar % 4 == 0) && (nextChar < maxLength) {
+            if (nextChar % 4 == 0) && (nextChar < combinedString.count) {
                 newFormatString.append(" ")
-            } else if nextChar > maxLength {
-                return newFormatString
+            }
+        }
+        return newFormatString
+    }
+    
+    func applyExpDateFormat() -> String {
+        let combinedString = self.components(separatedBy: "/").joined()
+        var newFormatString = ""
+        let maxLength = 3
+        guard !combinedString.isEmpty else { return newFormatString }
+        for (index, char) in combinedString.enumerated() {
+            let nextChar = index+1
+            newFormatString.append(char)
+            if (nextChar % 2 == 0) && nextChar < maxLength {
+                newFormatString.append("/")
             }
         }
         return newFormatString
