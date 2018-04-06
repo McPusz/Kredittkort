@@ -41,14 +41,18 @@ extension ViewController {
         self.appNameLabel.font = UIFont.systemFont(ofSize: 32)
         self.cardDataLabel.font = UIFont.systemFont(ofSize: 20)
         self.appNameLabel.textAlignment = .center
-        self.cardNumberTextField.addPaddingLeft()
-        self.expiryDateTextField.addPaddingLeft()
-        self.cvvTextField.addPaddingLeft()
+        [self.cardNumberTextField, self.expiryDateTextField, self.cvvTextField].forEach{
+            $0.addPaddingLeft()
+            $0.keyboardType = .numberPad
+        }
     }
     
     private func setupStaticTextContent() {
         self.appNameLabel.text = "appNameLabel".localize()
         self.cardDataLabel.text = "cardDataLabel".localize()
+        self.cardNumberTextField.placeholder = "cardNumberPlaceholder".localize()
+        self.expiryDateTextField.placeholder = "expDatePlaceholder".localize()
+        self.cvvTextField.placeholder = "cvvPlaceholder".localize()
         self.validateButton.setTitle("validateButton".localize(), for: .normal)
         self.generateButton.setTitle("generateButton".localize(), for: .normal)
     }

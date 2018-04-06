@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9AAE578387D3AF8D4551BA93 /* Pods_KredittkortTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37D7C12B59C0C20382F72F7 /* Pods_KredittkortTests.framework */; };
 		B01C9CFF649B800ECB6DDA42 /* libPods-Kredittkort.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E225ADC3405345E7E93EC940 /* libPods-Kredittkort.a */; };
+		B626341C20776C8A004CF82C /* ViewController+TextFieldHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */; };
+		B626341E20777A15004CF82C /* String+TextFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626341D20777A15004CF82C /* String+TextFormats.swift */; };
 		B6B134692075F4A2004614E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B134682075F4A2004614E9 /* AppDelegate.swift */; };
 		B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1346A2075F4A3004614E9 /* ViewController.swift */; };
 		B6B134702075F4A4004614E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1346F2075F4A4004614E9 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		14EAFA5C577199D0CA6B89D8 /* Pods-Kredittkort.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kredittkort.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kredittkort/Pods-Kredittkort.debug.xcconfig"; sourceTree = "<group>"; };
 		6EE08A2E92EF8BD2828CB521 /* Pods-KredittkortTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KredittkortTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KredittkortTests/Pods-KredittkortTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9F40E2BFDF165CA59DC5C10 /* Pods-Kredittkort.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kredittkort.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kredittkort/Pods-Kredittkort.release.xcconfig"; sourceTree = "<group>"; };
+		B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TextFieldHandler.swift"; sourceTree = "<group>"; };
+		B626341D20777A15004CF82C /* String+TextFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TextFormats.swift"; sourceTree = "<group>"; };
 		B6B134652075F4A2004614E9 /* Kredittkort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kredittkort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B134682075F4A2004614E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B1346A2075F4A3004614E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 				B6B1346A2075F4A3004614E9 /* ViewController.swift */,
 				B6B1348E207684E9004614E9 /* ViewController+Constraints.swift */,
 				B6B1349020768598004614E9 /* ViewController+Appearance.swift */,
+				B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			children = (
 				B6B13493207689A6004614E9 /* String+Localize.swift */,
 				B6B134972076998A004614E9 /* UITextField+Padding.swift */,
+				B626341D20777A15004CF82C /* String+TextFormats.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -396,6 +402,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B1349120768598004614E9 /* ViewController+Appearance.swift in Sources */,
+				B626341C20776C8A004CF82C /* ViewController+TextFieldHandler.swift in Sources */,
+				B626341E20777A15004CF82C /* String+TextFormats.swift in Sources */,
 				B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */,
 				B6B1348D20762BFE004614E9 /* Colors.swift in Sources */,
 				B6B1348F207684E9004614E9 /* ViewController+Constraints.swift in Sources */,

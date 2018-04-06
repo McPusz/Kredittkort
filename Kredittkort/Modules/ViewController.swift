@@ -36,9 +36,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.setupConstraints()
         self.setupAppearance()
+        self.setupTextFieldsHandling()
     }
-    
-    
-    
 }
 

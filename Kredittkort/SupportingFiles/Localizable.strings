@@ -9,3 +9,6 @@
 "cardDataLabel" = "Card data:";
 "validateButton" = "Validate";
 "generateButton" = "Generate";
+"cardNumberPlaceholder" = "xxxx xxxx xxxx xxxx";
+"expDatePlaceholder" = "MM/YY";
+"cvvPlaceholder" = "CVV";
