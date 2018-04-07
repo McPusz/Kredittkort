@@ -15,6 +15,8 @@ extension ViewController {
         self.setupTextAttributes()
         self.setupStaticTextContent()
         self.setupRoundCorners()
+        self.validationStatusImageView.image = #imageLiteral(resourceName: "unknown_status_icon")
+        self.validationStatusImageView.contentMode = .scaleAspectFit
     }
     
     private func setupBackgroundColors() {
@@ -61,7 +63,5 @@ extension ViewController {
         let cornerRoundSize: CGFloat = 6
         [self.cardNumberTextField, self.expiryDateTextField, self.cvvTextField,
          self.generateButton, self.validateButton, self.validationStatusImageView].forEach { $0.layer.cornerRadius = cornerRoundSize}
-        
-        
     }
 }

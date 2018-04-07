@@ -37,6 +37,23 @@ class ViewController: UIViewController {
         self.setupConstraints()
         self.setupAppearance()
         self.setupTextFieldsHandling()
+        self.setupButtonActions()
+    }
+    
+    private func setupButtonActions() {
+        self.validateButton.addTarget(self, action: #selector(validateCard(uiButton:)), for: .touchUpInside)
+    }
+    
+    @objc private func validateCard(uiButton: UIButton) {
+        let cardNum = "5157359818590564"
+        NetworkManager.checkValidity(for: cardNum) { (result) in
+            switch result {
+            case .success(let cardInfo):
+                print(cardInfo)
+            case .failure(let error):
+                print("error: \(error)")
+            }
+        }
     }
 }
 

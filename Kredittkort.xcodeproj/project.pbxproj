@@ -11,6 +11,9 @@
 		B01C9CFF649B800ECB6DDA42 /* libPods-Kredittkort.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E225ADC3405345E7E93EC940 /* libPods-Kredittkort.a */; };
 		B626341C20776C8A004CF82C /* ViewController+TextFieldHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */; };
 		B626341E20777A15004CF82C /* String+TextFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626341D20777A15004CF82C /* String+TextFormats.swift */; };
+		B62634212078A1DB004CF82C /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62634202078A1DB004CF82C /* NetworkSettings.swift */; };
+		B62634262078A96C004CF82C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62634252078A96C004CF82C /* CardModel.swift */; };
+		B62634282078AC4D004CF82C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62634272078AC4D004CF82C /* NetworkingManager.swift */; };
 		B6B134692075F4A2004614E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B134682075F4A2004614E9 /* AppDelegate.swift */; };
 		B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1346A2075F4A3004614E9 /* ViewController.swift */; };
 		B6B134702075F4A4004614E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1346F2075F4A4004614E9 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 		A9F40E2BFDF165CA59DC5C10 /* Pods-Kredittkort.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kredittkort.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kredittkort/Pods-Kredittkort.release.xcconfig"; sourceTree = "<group>"; };
 		B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TextFieldHandler.swift"; sourceTree = "<group>"; };
 		B626341D20777A15004CF82C /* String+TextFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TextFormats.swift"; sourceTree = "<group>"; };
+		B62634202078A1DB004CF82C /* NetworkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
+		B62634252078A96C004CF82C /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		B62634272078AC4D004CF82C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		B6B134652075F4A2004614E9 /* Kredittkort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kredittkort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B134682075F4A2004614E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B1346A2075F4A3004614E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B626341F2078A1C6004CF82C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B62634202078A1DB004CF82C /* NetworkSettings.swift */,
+				B62634272078AC4D004CF82C /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B62634222078A943004CF82C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B62634252078A96C004CF82C /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B62634232078A948004CF82C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1346A2075F4A3004614E9 /* ViewController.swift */,
+				B6B1348E207684E9004614E9 /* ViewController+Constraints.swift */,
+				B6B1349020768598004614E9 /* ViewController+Appearance.swift */,
+				B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B6B1345C2075F4A2004614E9 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +138,7 @@
 		B6B134672075F4A2004614E9 /* Kredittkort */ = {
 			isa = PBXGroup;
 			children = (
+				B626341F2078A1C6004CF82C /* Networking */,
 				B6B13488207601BA004614E9 /* AppSettings */,
 				B6B13489207601C5004614E9 /* SupportingFiles */,
 				B6B1348A207601D3004614E9 /* Modules */,
@@ -144,10 +179,8 @@
 		B6B1348A207601D3004614E9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B6B1346A2075F4A3004614E9 /* ViewController.swift */,
-				B6B1348E207684E9004614E9 /* ViewController+Constraints.swift */,
-				B6B1349020768598004614E9 /* ViewController+Appearance.swift */,
-				B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */,
+				B62634232078A948004CF82C /* View */,
+				B62634222078A943004CF82C /* Model */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -402,12 +435,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B1349120768598004614E9 /* ViewController+Appearance.swift in Sources */,
+				B62634262078A96C004CF82C /* CardModel.swift in Sources */,
+				B62634212078A1DB004CF82C /* NetworkSettings.swift in Sources */,
 				B626341C20776C8A004CF82C /* ViewController+TextFieldHandler.swift in Sources */,
 				B626341E20777A15004CF82C /* String+TextFormats.swift in Sources */,
 				B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */,
 				B6B1348D20762BFE004614E9 /* Colors.swift in Sources */,
 				B6B1348F207684E9004614E9 /* ViewController+Constraints.swift in Sources */,
 				B6B134982076998A004614E9 /* UITextField+Padding.swift in Sources */,
+				B62634282078AC4D004CF82C /* NetworkingManager.swift in Sources */,
 				B6B134692075F4A2004614E9 /* AppDelegate.swift in Sources */,
 				B6B13494207689A6004614E9 /* String+Localize.swift in Sources */,
 			);
