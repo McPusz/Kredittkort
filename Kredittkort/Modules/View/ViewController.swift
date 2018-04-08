@@ -42,18 +42,28 @@ class ViewController: UIViewController {
     
     private func setupButtonActions() {
         self.validateButton.addTarget(self, action: #selector(validateCard(uiButton:)), for: .touchUpInside)
+        self.generateButton.addTarget(self, action: #selector(generateCardNumber(uiButton:)), for: .touchUpInside)
     }
     
     @objc private func validateCard(uiButton: UIButton) {
-        let cardNum = "5157359818590564"
-        NetworkManager.checkValidity(for: cardNum) { (result) in
+        let cardNumber: String = self.cardNumberTextField.text?.components(separatedBy: .whitespaces).joined() ?? ""
+        NetworkManager.checkValidity(for: cardNumber) { (result) in
             switch result {
             case .success(let cardInfo):
                 print(cardInfo)
+                self.validationStatusImageView.image = #imageLiteral(resourceName: "validation_success_icon")
             case .failure(let error):
                 print("error: \(error)")
+                self.validationStatusImageView.image = #imageLiteral(resourceName: "unknown_status_icon")
+            case .error(let error):
+                print("Valid error: \(error)")
+                self.validationStatusImageView.image = #imageLiteral(resourceName: "validation_failed_icon")
             }
         }
+    }
+    
+    @objc private func generateCardNumber(uiButton: UIButton) {
+        self.cardNumberTextField.text = MasterCardNumberGenerator().generateCardNumber()
     }
 }
 

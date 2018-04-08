@@ -20,3 +20,8 @@ struct CardModel: Codable {
     let phone: String
     let valid: String
 }
+
+struct CardErrorMessage: Codable {
+    let error: String
+    let message: String
+}

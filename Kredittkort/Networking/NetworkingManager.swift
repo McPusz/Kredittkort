@@ -10,6 +10,7 @@ import Foundation
 
 enum Result<T> {
     case success(T)
+    case error(CardErrorMessage)
     case failure(Error)
 }
 struct NetworkManager {
@@ -17,6 +18,7 @@ struct NetworkManager {
     static func checkValidity(for cardNum: String, completion: ((Result<CardModel>)-> Void)?) {
         
         let url = try? NetworkSettings.urlPathFor(cardNumber: cardNum)
+    
         
         //FIXME: error handling
         var request = URLRequest(url: url!)
@@ -31,10 +33,11 @@ struct NetworkManager {
                 } else if let jsonData = data {
                     let decoder = JSONDecoder()
                     
-                    do {
-                        let card = try decoder.decode(CardModel.self, from: jsonData)
-                        completion?(.success(card))
-                    } catch {
+                    if let cardInfo = try? decoder.decode(CardModel.self, from: jsonData) {
+                        completion?(.success(cardInfo))
+                    } else if let errorInfo = try? decoder.decode(CardErrorMessage.self, from: jsonData) {
+                        completion?(.error(errorInfo))
+                    } else {
                         completion?(.failure(NetworkError.dataRetrievingError))
                     }
                 }
