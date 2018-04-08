@@ -15,6 +15,7 @@
 		B62634262078A96C004CF82C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62634252078A96C004CF82C /* CardModel.swift */; };
 		B62634282078AC4D004CF82C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62634272078AC4D004CF82C /* NetworkingManager.swift */; };
 		B626342B207A6581004CF82C /* CreditCardNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626342A207A6581004CF82C /* CreditCardNumberGenerator.swift */; };
+		B626342D207A7939004CF82C /* UIView+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626342C207A7939004CF82C /* UIView+Rotate.swift */; };
 		B6B134692075F4A2004614E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B134682075F4A2004614E9 /* AppDelegate.swift */; };
 		B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1346A2075F4A3004614E9 /* ViewController.swift */; };
 		B6B134702075F4A4004614E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1346F2075F4A4004614E9 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		B62634252078A96C004CF82C /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		B62634272078AC4D004CF82C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		B626342A207A6581004CF82C /* CreditCardNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardNumberGenerator.swift; sourceTree = "<group>"; };
+		B626342C207A7939004CF82C /* UIView+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rotate.swift"; sourceTree = "<group>"; };
 		B6B134652075F4A2004614E9 /* Kredittkort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kredittkort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B134682075F4A2004614E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B1346A2075F4A3004614E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				B6B13493207689A6004614E9 /* String+Localize.swift */,
 				B6B134972076998A004614E9 /* UITextField+Padding.swift */,
 				B626341D20777A15004CF82C /* String+TextFormats.swift */,
+				B626342C207A7939004CF82C /* UIView+Rotate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				B626341C20776C8A004CF82C /* ViewController+TextFieldHandler.swift in Sources */,
 				B626341E20777A15004CF82C /* String+TextFormats.swift in Sources */,
 				B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */,
+				B626342D207A7939004CF82C /* UIView+Rotate.swift in Sources */,
 				B6B1348D20762BFE004614E9 /* Colors.swift in Sources */,
 				B6B1348F207684E9004614E9 /* ViewController+Constraints.swift in Sources */,
 				B6B134982076998A004614E9 /* UITextField+Padding.swift in Sources */,

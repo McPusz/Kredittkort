@@ -46,20 +46,30 @@ class ViewController: UIViewController {
     }
     
     @objc private func validateCard(uiButton: UIButton) {
+        self.startSpinner()
+        
         let cardNumber: String = self.cardNumberTextField.text?.components(separatedBy: .whitespaces).joined() ?? ""
         NetworkManager.checkValidity(for: cardNumber) { (result) in
             switch result {
             case .success(let cardInfo):
                 print(cardInfo)
+                self.validationStatusImageView.stopRotating()
                 self.validationStatusImageView.image = #imageLiteral(resourceName: "validation_success_icon")
             case .failure(let error):
                 print("error: \(error)")
+                self.validationStatusImageView.stopRotating()
                 self.validationStatusImageView.image = #imageLiteral(resourceName: "unknown_status_icon")
             case .error(let error):
                 print("Valid error: \(error)")
+                self.validationStatusImageView.stopRotating()
                 self.validationStatusImageView.image = #imageLiteral(resourceName: "validation_failed_icon")
             }
         }
+    }
+    
+    private func startSpinner() {
+        self.validationStatusImageView.image = #imageLiteral(resourceName: "loader_icon")
+        self.validationStatusImageView.startRotating()
     }
     
     @objc private func generateCardNumber(uiButton: UIButton) {
