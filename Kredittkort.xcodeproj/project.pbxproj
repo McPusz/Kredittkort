@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9AAE578387D3AF8D4551BA93 /* Pods_KredittkortTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37D7C12B59C0C20382F72F7 /* Pods_KredittkortTests.framework */; };
-		B01C9CFF649B800ECB6DDA42 /* libPods-Kredittkort.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E225ADC3405345E7E93EC940 /* libPods-Kredittkort.a */; };
 		B626341C20776C8A004CF82C /* ViewController+TextFieldHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */; };
 		B626341E20777A15004CF82C /* String+TextFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626341D20777A15004CF82C /* String+TextFormats.swift */; };
 		B62634212078A1DB004CF82C /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62634202078A1DB004CF82C /* NetworkSettings.swift */; };
@@ -16,6 +15,8 @@
 		B62634282078AC4D004CF82C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62634272078AC4D004CF82C /* NetworkingManager.swift */; };
 		B626342B207A6581004CF82C /* CreditCardNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626342A207A6581004CF82C /* CreditCardNumberGenerator.swift */; };
 		B626342D207A7939004CF82C /* UIView+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626342C207A7939004CF82C /* UIView+Rotate.swift */; };
+		B626342F207A84F2004CF82C /* ViewController+ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626342E207A84F2004CF82C /* ViewController+ButtonActions.swift */; };
+		B6263431207A851C004CF82C /* ViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6263430207A851C004CF82C /* ViewController+Rx.swift */; };
 		B6B134692075F4A2004614E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B134682075F4A2004614E9 /* AppDelegate.swift */; };
 		B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1346A2075F4A3004614E9 /* ViewController.swift */; };
 		B6B134702075F4A4004614E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1346F2075F4A4004614E9 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		B6B13494207689A6004614E9 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13493207689A6004614E9 /* String+Localize.swift */; };
 		B6B13496207689C8004614E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6B13495207689C8004614E9 /* Localizable.strings */; };
 		B6B134982076998A004614E9 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B134972076998A004614E9 /* UITextField+Padding.swift */; };
+		ECB8BB10DDFD4E17105B4D99 /* Pods_Kredittkort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD704CA077CBB2DD28F28A4 /* Pods_Kredittkort.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		14EAFA5C577199D0CA6B89D8 /* Pods-Kredittkort.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kredittkort.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kredittkort/Pods-Kredittkort.debug.xcconfig"; sourceTree = "<group>"; };
+		4FD704CA077CBB2DD28F28A4 /* Pods_Kredittkort.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kredittkort.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE08A2E92EF8BD2828CB521 /* Pods-KredittkortTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KredittkortTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KredittkortTests/Pods-KredittkortTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9F40E2BFDF165CA59DC5C10 /* Pods-Kredittkort.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kredittkort.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kredittkort/Pods-Kredittkort.release.xcconfig"; sourceTree = "<group>"; };
 		B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TextFieldHandler.swift"; sourceTree = "<group>"; };
@@ -50,6 +53,8 @@
 		B62634272078AC4D004CF82C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		B626342A207A6581004CF82C /* CreditCardNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardNumberGenerator.swift; sourceTree = "<group>"; };
 		B626342C207A7939004CF82C /* UIView+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rotate.swift"; sourceTree = "<group>"; };
+		B626342E207A84F2004CF82C /* ViewController+ButtonActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ButtonActions.swift"; sourceTree = "<group>"; };
+		B6263430207A851C004CF82C /* ViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Rx.swift"; sourceTree = "<group>"; };
 		B6B134652075F4A2004614E9 /* Kredittkort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kredittkort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B134682075F4A2004614E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B1346A2075F4A3004614E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +71,6 @@
 		B6B13495207689C8004614E9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B6B134972076998A004614E9 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 		DA78F51172AA9D6452BC76BF /* Pods-KredittkortTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KredittkortTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KredittkortTests/Pods-KredittkortTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E225ADC3405345E7E93EC940 /* libPods-Kredittkort.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kredittkort.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37D7C12B59C0C20382F72F7 /* Pods_KredittkortTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KredittkortTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B01C9CFF649B800ECB6DDA42 /* libPods-Kredittkort.a in Frameworks */,
+				ECB8BB10DDFD4E17105B4D99 /* Pods_Kredittkort.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +118,8 @@
 				B6B1348E207684E9004614E9 /* ViewController+Constraints.swift */,
 				B6B1349020768598004614E9 /* ViewController+Appearance.swift */,
 				B626341B20776C8A004CF82C /* ViewController+TextFieldHandler.swift */,
+				B626342E207A84F2004CF82C /* ViewController+ButtonActions.swift */,
+				B6263430207A851C004CF82C /* ViewController+Rx.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,8 +226,8 @@
 		C5C0FFE75E2C6A55311E20CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E225ADC3405345E7E93EC940 /* libPods-Kredittkort.a */,
 				E37D7C12B59C0C20382F72F7 /* Pods_KredittkortTests.framework */,
+				4FD704CA077CBB2DD28F28A4 /* Pods_Kredittkort.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -346,9 +352,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kredittkort/Pods-Kredittkort-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,7 +463,9 @@
 				B6B1349120768598004614E9 /* ViewController+Appearance.swift in Sources */,
 				B62634262078A96C004CF82C /* CardModel.swift in Sources */,
 				B62634212078A1DB004CF82C /* NetworkSettings.swift in Sources */,
+				B626342F207A84F2004CF82C /* ViewController+ButtonActions.swift in Sources */,
 				B626341C20776C8A004CF82C /* ViewController+TextFieldHandler.swift in Sources */,
+				B6263431207A851C004CF82C /* ViewController+Rx.swift in Sources */,
 				B626341E20777A15004CF82C /* String+TextFormats.swift in Sources */,
 				B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */,
 				B626342D207A7939004CF82C /* UIView+Rotate.swift in Sources */,
@@ -618,10 +631,7 @@
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = "$(SRCROOT)/Kredittkort/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.Kredittkort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -638,10 +648,7 @@
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = "$(SRCROOT)/Kredittkort/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.Kredittkort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -658,11 +665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = KredittkortTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.KredittkortTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -680,11 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = KredittkortTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.KredittkortTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

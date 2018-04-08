@@ -12,3 +12,4 @@
 "cardNumberPlaceholder" = "xxxx xxxx xxxx xxxx";
 "expDatePlaceholder" = "MM/YY";
 "cvvPlaceholder" = "CVV";
+"textFieldsInvalid" = "Fill input data";

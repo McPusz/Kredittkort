@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
     
@@ -24,6 +25,11 @@ class ViewController: UIViewController {
     private(set) var appNameLabel = UILabel()
     private(set) var cardDataLabel = UILabel()
     
+    var cardTextfieldObservable: Observable<Bool>!
+    var expDateTextfieldObservable: Observable<Bool>!
+    var cvvTextfieldObservable: Observable<Bool>!
+    var disposeBag = DisposeBag()
+    
     var uiComponents: [UIView] {
         return [
             self.cardNumberTextField, self.expiryDateTextField, self.cvvTextField,
@@ -38,42 +44,9 @@ class ViewController: UIViewController {
         self.setupAppearance()
         self.setupTextFieldsHandling()
         self.setupButtonActions()
+        self.setupTextObservables()
     }
     
-    private func setupButtonActions() {
-        self.validateButton.addTarget(self, action: #selector(validateCard(uiButton:)), for: .touchUpInside)
-        self.generateButton.addTarget(self, action: #selector(generateCardNumber(uiButton:)), for: .touchUpInside)
-    }
-    
-    @objc private func validateCard(uiButton: UIButton) {
-        self.startSpinner()
-        
-        let cardNumber: String = self.cardNumberTextField.text?.components(separatedBy: .whitespaces).joined() ?? ""
-        NetworkManager.checkValidity(for: cardNumber) { (result) in
-            switch result {
-            case .success(let cardInfo):
-                print(cardInfo)
-                self.validationStatusImageView.stopRotating()
-                self.validationStatusImageView.image = #imageLiteral(resourceName: "validation_success_icon")
-            case .failure(let error):
-                print("error: \(error)")
-                self.validationStatusImageView.stopRotating()
-                self.validationStatusImageView.image = #imageLiteral(resourceName: "unknown_status_icon")
-            case .error(let error):
-                print("Valid error: \(error)")
-                self.validationStatusImageView.stopRotating()
-                self.validationStatusImageView.image = #imageLiteral(resourceName: "validation_failed_icon")
-            }
-        }
-    }
-    
-    private func startSpinner() {
-        self.validationStatusImageView.image = #imageLiteral(resourceName: "loader_icon")
-        self.validationStatusImageView.startRotating()
-    }
-    
-    @objc private func generateCardNumber(uiButton: UIButton) {
-        self.cardNumberTextField.text = MasterCardNumberGenerator().generateCardNumber()
-    }
+   
 }
 
