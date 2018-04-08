@@ -17,6 +17,8 @@
 		B626342D207A7939004CF82C /* UIView+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626342C207A7939004CF82C /* UIView+Rotate.swift */; };
 		B626342F207A84F2004CF82C /* ViewController+ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B626342E207A84F2004CF82C /* ViewController+ButtonActions.swift */; };
 		B6263431207A851C004CF82C /* ViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6263430207A851C004CF82C /* ViewController+Rx.swift */; };
+		B6263433207A96D1004CF82C /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6263432207A96D1004CF82C /* UIViewController+Keyboard.swift */; };
+		B6263435207A970B004CF82C /* TestInputValid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6263434207A970B004CF82C /* TestInputValid.swift */; };
 		B6B134692075F4A2004614E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B134682075F4A2004614E9 /* AppDelegate.swift */; };
 		B6B1346B2075F4A3004614E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1346A2075F4A3004614E9 /* ViewController.swift */; };
 		B6B134702075F4A4004614E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1346F2075F4A4004614E9 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		B626342C207A7939004CF82C /* UIView+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rotate.swift"; sourceTree = "<group>"; };
 		B626342E207A84F2004CF82C /* ViewController+ButtonActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ButtonActions.swift"; sourceTree = "<group>"; };
 		B6263430207A851C004CF82C /* ViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Rx.swift"; sourceTree = "<group>"; };
+		B6263432207A96D1004CF82C /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		B6263434207A970B004CF82C /* TestInputValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInputValid.swift; sourceTree = "<group>"; };
 		B6B134652075F4A2004614E9 /* Kredittkort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kredittkort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B134682075F4A2004614E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B1346A2075F4A3004614E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			children = (
 				B6B1347D2075F4A4004614E9 /* KredittkortTests.swift */,
 				B6B1347F2075F4A4004614E9 /* Info.plist */,
+				B6263434207A970B004CF82C /* TestInputValid.swift */,
 			);
 			path = KredittkortTests;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				B6B134972076998A004614E9 /* UITextField+Padding.swift */,
 				B626341D20777A15004CF82C /* String+TextFormats.swift */,
 				B626342C207A7939004CF82C /* UIView+Rotate.swift */,
+				B6263432207A96D1004CF82C /* UIViewController+Keyboard.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6263433207A96D1004CF82C /* UIViewController+Keyboard.swift in Sources */,
 				B626342B207A6581004CF82C /* CreditCardNumberGenerator.swift in Sources */,
 				B6B1349120768598004614E9 /* ViewController+Appearance.swift in Sources */,
 				B62634262078A96C004CF82C /* CardModel.swift in Sources */,
@@ -483,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B1347E2075F4A4004614E9 /* KredittkortTests.swift in Sources */,
+				B6263435207A970B004CF82C /* TestInputValid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,7 +639,10 @@
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = "$(SRCROOT)/Kredittkort/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.Kredittkort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -648,7 +659,10 @@
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = "$(SRCROOT)/Kredittkort/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.Kredittkort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -665,7 +679,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = KredittkortTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.KredittkortTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -683,7 +701,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMUCQFH3U;
 				INFOPLIST_FILE = KredittkortTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = McPusz.KredittkortTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

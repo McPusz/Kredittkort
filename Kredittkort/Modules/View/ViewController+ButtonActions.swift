@@ -42,6 +42,7 @@ extension ViewController {
     }
     
     @objc private func generateCardNumber(uiButton: UIButton) {
-        self.cardNumberTextField.text = MasterCardNumberGenerator().generateCardNumber()
+        let cardNumber = MasterCardNumberGenerator().generateCardNumber()
+        self.cardNumberTextField.insertText(cardNumber)
     }
 }

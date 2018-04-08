@@ -23,7 +23,7 @@ extension ViewController {
     private func setupCardNumberObservable() -> Observable<Bool> {
         return self.cardNumberTextField
             .rx
-            .observe(String.self, "text")
+            .text
             .asObservable()
             .map{$0?.components(separatedBy: .whitespaces).joined()}
             .map { (cardNumber) -> Bool in

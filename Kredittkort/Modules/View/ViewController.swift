@@ -12,9 +12,9 @@ import RxSwift
 class ViewController: UIViewController {
     
     //text input
-    private(set) var cardNumberTextField = UITextField()
-    private(set) var expiryDateTextField = UITextField()
-    private(set) var cvvTextField = UITextField()
+    var cardNumberTextField = UITextField()
+    var expiryDateTextField = UITextField()
+    var cvvTextField = UITextField()
     
     //buttons
     private(set) var validateButton = UIButton()
@@ -45,8 +45,8 @@ class ViewController: UIViewController {
         self.setupTextFieldsHandling()
         self.setupButtonActions()
         self.setupTextObservables()
+        self.hideKeyboardWhenTappedAround()
     }
-    
    
 }
 
