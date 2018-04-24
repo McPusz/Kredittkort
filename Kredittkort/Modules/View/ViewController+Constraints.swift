@@ -27,7 +27,7 @@ extension ViewController {
         
         //App name label
         
-        // not so significant to use it for a quick programming assignment :P
+        // TODO:
         //        let topAnchor: NSLayoutYAxisAnchor
         //        if #available(iOS 11.0, *) {
         //            topAnchor = self.view.safeAreaLayoutGuide.topAnchor

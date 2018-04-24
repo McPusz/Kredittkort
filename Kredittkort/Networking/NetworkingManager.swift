@@ -18,9 +18,7 @@ struct NetworkManager {
     static func checkValidity(for cardNum: String, completion: ((Result<CardModel>)-> Void)?) {
         
         let url = try? NetworkSettings.urlPathFor(cardNumber: cardNum)
-    
-        
-        //FIXME: error handling
+
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
         

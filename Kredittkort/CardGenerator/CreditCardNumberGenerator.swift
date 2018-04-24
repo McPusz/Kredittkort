@@ -33,7 +33,6 @@ struct MasterCardNumberGenerator {
         let lastDigit = self.lastDigitFormula(cardNumber: cardNumber)
         cardNumber[cardNumber.count - 1] = lastDigit
         
-        //FIXME: add whitespaces
         let cardNumberString = cardNumber.map{String($0)}.joined()
         return format == .whitespaces ? cardNumberString.applyCreditCardFormat() : cardNumberString
     }

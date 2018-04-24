@@ -15,7 +15,7 @@ extension ViewController {
     }
     
     @objc private func validateCard(uiButton: UIButton) {
-        //If more time I would add observables on all three textfiel texts that would enable this button when all three textfielsd validation became successful
+        //TODO: add observables on all three textfield texts that would enable this button when all three textfields validation became successful
         self.startSpinner()
         let cardNumber: String = self.cardNumberTextField.text?.components(separatedBy: .whitespaces).joined() ?? ""
         NetworkManager.checkValidity(for: cardNumber) { (result) in
